@@ -1,5 +1,5 @@
 const defaultState = {
-  color: red
+  color: "green"
 };
 
 const mainReducer = (state = defaultState, action) => {
@@ -14,3 +14,5 @@ const mainReducer = (state = defaultState, action) => {
     };
   }
 };
+
+export default mainReducer;

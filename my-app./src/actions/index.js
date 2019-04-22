@@ -3,7 +3,7 @@ import axios from "axios";
 export function loadColor() {
   return dispatch => {
     return axios.get("http://www.colr.org/json/color/random").then(response => {
-      dispatch(changeColor("#" + response.data.new_Color)); //# is to read hexcode of color
+      dispatch(changeColor("#" + response.data.new_color));
     });
   };
 }
